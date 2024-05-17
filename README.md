@@ -28,8 +28,5 @@ The output CSV file will include the following columns for each item:
   
 ![Output Image](output.PNG)
 
-## Getting Started
-To use the Steam API Investment Tracker, ensure you have Python installed on your system and the necessary permissions to make requests to the Steam API.
-
 ## Disclaimer
 This tool is not affiliated with or endorsed by Steam or Valve Corporation. The accuracy of the data is dependent on the Steam API's current responses and market conditions.
