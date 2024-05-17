@@ -1,7 +1,7 @@
 # Steam API Investment Tracker
 
 ## Overview
-The **Steam API Investment Tracker** is a streamlined tool designed to help you monitor and analyze your investment portfolio on the Steam Market. With just a simple CSV input, this program fetches the latest median prices for each of your items and calculates the total Profit and Loss (PNL) of your investments.
+The **Steam API Investment Tracker** is a streamlined tool designed to help you monitor and analyze your investment portfolio on the Steam Market. With just a simple CSV input, this program fetches the latest median prices for each of your items and calculates the total Profit and Loss (PNL) of your investments. Currently designed to use CS2's market - game ID of 730, which can be manually adjusted.
 
 ## Features
 - **Easy Input**: Provide your investment data in a CSV file named `input.csv` using the format: `Item,QTY,Purchase price`.
