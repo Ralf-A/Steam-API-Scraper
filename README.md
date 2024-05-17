@@ -33,6 +33,3 @@ To use the Steam API Investment Tracker, ensure you have Python installed on you
 
 ## Disclaimer
 This tool is not affiliated with or endorsed by Steam or Valve Corporation. The accuracy of the data is dependent on the Steam API's current responses and market conditions.
-
-## License
-This project is open-source and available under the MIT License.
