@@ -4,6 +4,7 @@ import requests
 # Function to get median price from Steam
 def get_median_price(item_name):
     item_name_encoded = item_name.replace(' ', '%20')
+    # Configure the appid and currency as needed
     url = f'https://steamcommunity.com/market/priceoverview/?currency=3&appid=730&market_hash_name={item_name_encoded}'
     response = requests.get(url)
     if response.status_code == 200:
@@ -19,7 +20,7 @@ def get_median_price(item_name):
 # Function to process the CSV file and print total PNL
 def process_csv(input_file, output_file):
     total_pnl = 0
-
+    total_value = 0
     with open(input_file, mode='r', newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         items = list(reader)
@@ -36,6 +37,7 @@ def process_csv(input_file, output_file):
                 total_price = round(int(item['QTY']) * median_price, 2)
                 pnl = round(total_price - total_purchase_price, 2)
                 total_pnl += pnl
+                total_value += total_price
                 writer.writerow({
                     'Item': item['Item'],
                     'QTY': item['QTY'],
@@ -57,7 +59,8 @@ def process_csv(input_file, output_file):
                 })
 
     # Print the total PNL after processing all items
-    print(f'Total PNL: {round(total_pnl, 2)}')
+    print(f'Total PNL: {round(total_pnl, 2)} €')
+    print(f'Total value: {round(total_value, 2)} €')
 
 # Example usage
 process_csv('input.csv', 'output.csv')
