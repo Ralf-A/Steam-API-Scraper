@@ -13,7 +13,7 @@ The **Steam API Investment Tracker** is a streamlined tool designed to help you 
 1. **Prepare Your CSV**: List all your items in `input.csv` with the quantity and purchase price.
 2. **Run the Tracker**: Execute the program to process your data.
 3. **Review Your Investments**: Check `output.csv` for a detailed breakdown of your portfolio's performance.
-![Input Image](input.png)
+![Input Image](input.PNG)
 
 ## Output Format
 The output CSV file will include the following columns for each item:
@@ -24,7 +24,7 @@ The output CSV file will include the following columns for each item:
 - `Steam Median price`: The current median price of the item on Steam.
 - `Total price`: The total value of the item at the current median price.
 - `PNL`: The profit or loss for the item.
-![Input Image](output.png)
+![Output Image](output.PNG)
 
 ## Getting Started
 To use the Steam API Investment Tracker, ensure you have Python installed on your system and the necessary permissions to make requests to the Steam API.
